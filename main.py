@@ -15,8 +15,16 @@ IMG_SIZE      = (224, 224)
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 CLASS_NAMES = [
-    "Acne", "Eczema", "Herpes Zoster", "Melanoma",
-    "Psoriasis", "Ringworm", "Rosacea", "Vitiligo",
+    "Atopic Dermatitis",
+    "Basal Cell",
+    "Benign Keratosis",
+    "Eczema",
+    "Melanocytic",
+    "Melanoma",
+    "Psoriasis",
+    "Seborrheic",
+    "Tinea Ringworms Candidiasis",
+    "Warts Molluscum"
 ]
 
 DISEASE_INFO = {
