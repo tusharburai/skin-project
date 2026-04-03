@@ -232,6 +232,58 @@ DISEASE_INFO = {
     },
 }
 
+DISEASE_INFO.update({
+    "Atopic Dermatitis": {
+        "emoji": "🟡",
+        "severity": "Mild–Severe (Chronic)",
+        "causes": ["Genetic mutations affecting skin barrier", "Immune system overreaction", "Environmental triggers like dust mites or pollen"],
+        "symptoms": ["Dry, cracked skin", "Itchiness (pruritus)", "Red to brownish-gray patches"],
+        "suggestions": ["Moisturize frequently", "Avoid harsh soaps and irritants", "Use prescribed topical corticosteroids"]
+    },
+    "Basal Cell": {
+        "emoji": "🔴",
+        "severity": "Moderate (Skin Cancer)",
+        "causes": ["Long-term exposure to ultraviolet (UV) radiation", "Fair skin type", "History of sunburns"],
+        "symptoms": ["Pearly or waxy bump", "Flat, flesh-colored or brown scar-like lesion", "Bleeding or scabbing sore that heals and returns"],
+        "suggestions": ["⚠️ See a dermatologist for biopsy and removal", "Avoid direct sun exposure", "Use sunscreen daily"]
+    },
+    "Benign Keratosis": {
+        "emoji": "🟤",
+        "severity": "Mild (Non-cancerous)",
+        "causes": ["Genetic predisposition", "Aging (very common in older adults)", "Sun exposure in some cases"],
+        "symptoms": ["Waxy, slightly elevated scaly appearance", "Pasted-on look", "Light tan to black color"],
+        "suggestions": ["Usually requires no treatment", "Consult a doctor if it gets irritated or bleeds", "Do not scratch or pick at it"]
+    },
+    "Melanocytic": {
+        "emoji": "⚫",
+        "severity": "Mild-Moderate (Moles/Nevi)",
+        "causes": ["Localized overgrowth of melanocytes", "Genetics", "Sun exposure"],
+        "symptoms": ["Usually uniform in color", "Round or oval shape", "Flat or raised from the skin"],
+        "suggestions": ["Monitor for changes in size, shape, or color (ABCDE rule)", "Apply sunscreen", "Consult a dermatologist if changes occur"]
+    },
+    "Seborrheic": {
+        "emoji": "🟠",
+        "severity": "Mild",
+        "causes": ["Malassezia yeast overgrowth", "Excess oil production", "Stress and fatigue"],
+        "symptoms": ["Flaky scales (dandruff)", "Greasy patches of skin covered with white or yellow scales", "Redness or mild itching"],
+        "suggestions": ["Use over-the-counter medicated creams", "Wash affected area with zinc pyrithione or ketoconazole shampoo", "Manage stress levels"]
+    },
+    "Tinea Ringworms Candidiasis": {
+        "emoji": "🟢",
+        "severity": "Mild (Highly Contagious)",
+        "causes": ["Fungal infection caused by dermatophytes or yeast", "Direct skin-to-skin contact", "Warm, moist environments"],
+        "symptoms": ["Ring-shaped rash with clear center", "Itchy, red, scaly, or cracked skin", "Blisters or pustules"],
+        "suggestions": ["Keep the affected area clean and dry", "Use OTC antifungal creams or sprays", "Avoid sharing personal items"]
+    },
+    "Warts Molluscum": {
+        "emoji": "🦠",
+        "severity": "Mild (Contagious)",
+        "causes": ["Human Papillomavirus (HPV) for Warts", "Molluscum contagiosum virus (MCV)", "Direct contact with infected skin or surfaces"],
+        "symptoms": ["Small, rough, hard bumps (warts)", "Small, raised, firm, and painless bumps with a dimple in the center (molluscum)", "Can appear anywhere on the body"],
+        "suggestions": ["Avoid scratching or picking to prevent spreading", "Use OTC wart treatments", "Consult a doctor for cryotherapy or professional removal"]
+    }
+})
+
 model = None
 
 def load_model():

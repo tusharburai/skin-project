@@ -40,13 +40,9 @@ imageInput.addEventListener("change", () => {
 
 function handleFile(file) {
   selectedFile = file;
-  const reader = new FileReader();
-  reader.onload = e => {
-    previewImg.src = e.target.result;
-    previewImg.classList.remove("hidden");
-    dzIdle.classList.add("hidden");
-  };
-  reader.readAsDataURL(file);
+  previewImg.src = URL.createObjectURL(file);
+  previewImg.classList.remove("hidden");
+  dzIdle.classList.add("hidden");
   predictBtn.disabled = false;
   showIdle();
 }
